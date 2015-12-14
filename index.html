@@ -1,59 +1,117 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My own Zipline!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- Begin navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">
                     <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
                 </a>
-                <a class="navbar-brand" href="#">This looks better</a>
+                <a href="#" class="navbar-brand">Juan Marco</a>
+            </div>
+            <!-- Right side of navbar -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">ADMIN DASHBOARD</li>
+                            <li><a href="#">Admin 1</a></li>
+                            <li><a href="#">Admin 2</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Admin 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- End of navbar -->
 
-
-    <!-- Begin main section -->
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="text-primary">Mr. JMM</h1>
-                <p class="lead">This is how I feel about coding</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>Links</h2>
-            </div>
-            <div class="col-sm-4">
-                <h2>Resources</h2>
-            </div>
-            <div class="col-sm-4">
-                <h2>Cool Memes</h2>
-            </div>
+    <!-- Begin main -->
+    <main class=container>
+        <div class="jumbotron">
+            <h1>jm&sup2 web development studio</h1>
+            <p>This is an example</p>
         </div>
     </main>
-    <!-- End main section -->
 
+    <!-- About me -->
+    <div class="container">
+        <div class="page-header">
+            <img src="https://s.gravatar.com/avatar/64aacb83ff9853fd34495f700a5d8451?s=200" alt="My Gravatar">
+            <h2><small>I'm a front-end web developer that likes to build things and always asks himself: "How does this work?"</small></h2>
+        </div>
+
+    </div>
+
+    <!-- End of About me -->
+
+    <!-- Project section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/200x200" alt="placeholder image">
+                    <div class="caption">
+                        <h3>Project 1</h3>
+                        <p class="text-center"><a href="#" class="btn btn-primary">GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/200x200" alt="placeholder image">
+                    <div class="caption">
+                        <h3>Project 2</h3>
+                        <p class="text-center"><a href="#" class="btn btn-primary">GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/200x200" alt="placeholder image">
+                    <div class="caption">
+                        <h3>Project 1</h3>
+                        <p class="text-center"><a href="#" class="btn btn-primary">GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project section -->
 
 
 
     <!-- Begin of nav footer -->
-    <nav class="navbar navbar-default navbar-fixed-bottom">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container">
             <a class="navbar-brand" href="#">This will be the footer</a>
         </div>
     </nav>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
